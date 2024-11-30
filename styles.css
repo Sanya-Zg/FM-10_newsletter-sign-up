@@ -97,7 +97,7 @@ input, button{
     font-size: 16px;
 }
 
-@media (min-width: 715px) {
+@media (min-width: 825px) {
     h1,h2{
         font-size: 56px;
         font-weight: 700;
