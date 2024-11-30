@@ -21,6 +21,7 @@ form.addEventListener('submit', (event) => {
         subCont.classList.remove('hidden');
         inputEmail.textContent = emailValue;
         form.reset();
+        
     }
 });
 
@@ -31,4 +32,5 @@ function validEm(email){
 dismit.addEventListener('click', () => {
     subCont.classList.add('hidden');
     container.classList.remove('hidden');
+    location.reload();
 })

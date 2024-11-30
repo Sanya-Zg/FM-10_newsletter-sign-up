@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -9,7 +8,6 @@ body{
     margin: 0;
     background-color: #36384C;
     color: hsl(234, 29%, 20%);
-    /* overflow: hidden; */
 }
 .visible{
     display: block;
@@ -17,13 +15,7 @@ body{
 .hidden{
     display: none;
 }
-
-
-.main_info {
-    max-width: 376px;
-    margin: 97px auto 98px;
- }
- p{
+p{
     margin: 24px auto;
     line-height: 150%;
  }
@@ -53,7 +45,6 @@ body{
 }
 .err{
     color: hsl(4, 100%, 67%);
-    display: none;
 }
 span{
     font-size: 12px;
@@ -62,7 +53,7 @@ span{
     display: inline-block;
 }
 input, button{
-    width: 376px;
+    width: 100%;
     height: 56px;
     border-radius: 8px;
     font-size: 16px;
@@ -79,16 +70,14 @@ input, button{
 .email_error{
     border: 1px solid hsl(4, 100%, 67%);
     background-color: #FFE8E6;
-    /*  */
 }
 .button_submit {
     color: #fff;
     background-color: hsl(234, 29%, 20%);
     cursor: pointer;
-    padding: 18px 72px 14px;
+    /* padding: 18px 72px 14px; */
     border: 0;
     transition: background 0.3s linear;
-    
 }
 .button_submit:hover{
     background: linear-gradient(0deg, #FF6A3A, #FF527B);
@@ -96,17 +85,7 @@ input, button{
 }
 
 /* ------Success window---- */
-.subscribe_container {
-    max-width: 504px;
-    margin: 280px auto;
-    background: #fff;
-    padding-top: 48px;
-    padding-bottom: 64px;
-    border-radius: 36px;
-}
-.inner_sub {
-    margin: 0 64px;
-}
+
 .img_sub{
     margin-bottom: 40px;
     height: 64px;
@@ -114,9 +93,6 @@ input, button{
 .img_sub img{
     width: 64px;
     height: 64px;
-}
-.subscr_par{
-    margin-bottom: 40px;
 }
 .subscr_par span{
     font-size: 16px;
@@ -142,6 +118,66 @@ input, button{
         margin-left: 0;
         background-image: url(./assets/images/illustration-sign-up-desktop.svg) ;
         width: 400px;
+    }
+    .main_info {
+        max-width: 376px;
+        margin: 97px auto 98px;
+     }
+     /* ------Success window --- */
+     .subscribe_container {
+        max-width: 504px;
+        margin: 280px auto;
+        background: #fff;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        border-radius: 36px;
+    }
+    .inner_sub {
+        margin: 0 64px;
+    }
+    .subscr_par{
+        margin-bottom: 40px;
+    }
+    
+}
+@media (max-width: 375px) {
+    h1,h2{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 100%;
+     }
+     .container{
+        display: none;
+        max-width: 375px;
+        background-color: #fff;
+        flex-direction: column;
+    }
+    .image {
+        width: 375px;
+        height: 284px;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    .main_info {
+        max-width: 327px;
+        margin: 40px 24px;
+     }
+/* ------------Success window -------- */
+.subscribe_container {
+    max-width: 375px;
+    height: 812px;
+    padding: 24px;
+    background: #fff;
+    }
+    .inner_sub {
+        margin: 125px 0 39px;
+    }
+    .inner_sub p{
+        height: 155px;
+    }
+    .subscr_par{
+        margin: 24px auto 204px;
+        line-height: 200%;
     }
     
 }
