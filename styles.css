@@ -75,7 +75,6 @@ input, button{
     color: #fff;
     background-color: hsl(234, 29%, 20%);
     cursor: pointer;
-    /* padding: 18px 72px 14px; */
     border: 0;
     transition: background 0.3s linear;
 }
@@ -148,7 +147,7 @@ input, button{
         line-height: 100%;
      }
      .container{
-        display: none;
+        display: flex;
         max-width: 375px;
         background-color: #fff;
         flex-direction: column;
